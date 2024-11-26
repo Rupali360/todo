@@ -1,0 +1,94 @@
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  background-color: #18181b;
+  color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  width: clamp(300px, 60%, 600px);
+  min-height: calc(100dvh - 80px);
+  overflow-y: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.text {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+li button {
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+li input {
+  border-radius: 50%;
+  text-transform: capitalize;
+}
+
+.buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+.input-box input {
+  flex-grow: 1;
+  background-color: transparent;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #333;
+  padding: 10px 15px;
+  color: white;
+}
+.input-box input::placeholder {
+  color: rgb(182, 182, 182);
+}
+
+.add-button {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.done {
+  text-decoration-line: line-through;
+}
