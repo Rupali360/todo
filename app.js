@@ -2,7 +2,7 @@ const addButton = document.getElementById("add-button");
 const addInput = document.getElementById("add-input");
 const taskList = document.getElementById("task-list");
 
-var todos = getFromLocalStorage();
+var todos = getFromLocalStorage()
 
 let text = "";
 todos.forEach((todo) => {
